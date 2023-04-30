@@ -9,6 +9,7 @@ const htmlBody = (data) => {
   <html lang="${metadata.language}" data-theme="dark">
     <head>
       <meta charset="utf-8">
+      <base href="${data.baseUrl}">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="/scss/styles.css">
       <meta name="description" content="${metadata.description}">
