@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve blog",
-    "build": "nx build",
+    "build": "nx build blog",
     "test": "nx test"
   },
   "private": false,
