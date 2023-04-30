@@ -2,7 +2,7 @@ const { EleventyRenderPlugin } = require('@11ty/eleventy');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const eleventySass = require('eleventy-sass');
 
-const BASE_URL = '/devpr';
+const BASE_URL = '/devpr/';
 
 module.exports = function (config) {
 

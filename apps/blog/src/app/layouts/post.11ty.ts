@@ -41,7 +41,7 @@ class Post {
           ${join(data.collections.posts.map(postItem))}
         </aside>
       </div>
-      ${backToBlog}
+      ${backToBlog(data)}
     `;
   }
 }

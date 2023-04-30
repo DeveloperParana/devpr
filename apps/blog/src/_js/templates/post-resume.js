@@ -6,7 +6,7 @@ const postResume = (props) => {
     const { url, data } = props;
     return `
     <article>
-      <a href="${url}">
+      <a href="${data.baseUrl + url}">
         <h3>${data.title}</h3>
       </a>
       ${data.image ? (0, post_image_1.postImage)(props) : ''}

@@ -40,7 +40,7 @@ class Post {
           ${(0, join_1.join)(data.collections.posts.map(post_item_1.default))}
         </aside>
       </div>
-      ${back_to_blog_1.backToBlog}
+      ${(0, back_to_blog_1.backToBlog)(data)}
     `;
     }
 }

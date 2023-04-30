@@ -5,4 +5,4 @@ title:  DevPR Blog's
 
 # Hello world
 
-Check out the [blog](/blog) too!
+Check out the [blog](/devpr/blog) too!

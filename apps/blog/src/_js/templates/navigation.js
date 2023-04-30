@@ -20,7 +20,7 @@ const navigation = (data, id = 'navigation') => {
           <details role="list" dir="rtl">
             <summary aria-haspopup="listbox" role="link" class="contrast">Apps</summary>
             <ul role="listbox">
-              <li><a href="${data.baseUrl}/blog">Blog</a></li>
+              <li><a href="${data.baseUrl}blog">Blog</a></li>
             </ul>
           </details>
         </li>

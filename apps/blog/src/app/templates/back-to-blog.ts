@@ -1,2 +1,4 @@
-export const backToBlog = `<a href="/blog">Voltar ao blog</a>`
+import { Data } from '../types';
 
+export const backToBlog = (data: Data) =>
+  `<a href="${data.baseUrl}blog">Voltar ao blog</a>`;

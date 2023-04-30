@@ -11,7 +11,7 @@ const htmlBody = (data) => {
       <meta charset="utf-8">
       <base href="${data.baseUrl}">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/scss/styles.css">
+      <link rel="stylesheet" href="${data.baseUrl}scss/styles.css">
       <meta name="description" content="${metadata.description}">
       <title>${title || 'DevPR Blog'}</title>
     </head>
