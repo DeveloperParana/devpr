@@ -1,0 +1,15 @@
+{
+  "name": "blog",
+  "description": "eleventy blog",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rimraf dist src/_js",
+    "build": "npm-run-all clean build:ts build:11ty",
+    "serve": "NODE_ENV=dev npm-run-all clean build:ts -p watch:* -- --watch",
+    "build:11ty": "eleventy --quiet --input=./src --output=../../dist/apps/blog",
+    "watch:11ty": "eleventy --serve --quiet --input=./src --output=../../dist/apps/blog",
+    "build:ts": "tsc --outDir src/_js",
+    "watch:ts": "yarn build:ts --watch",
+    "test": "jest"
+  }
+}

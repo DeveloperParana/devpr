@@ -1,0 +1,21 @@
+{
+  "title": "DevPR",
+  "url": "https://devpr.org/",
+  "language": "pt-br",
+  "description": "Comunidade Paranaense de Desenvolvedores",
+  "feed": {
+    "subtitle": "Comunidade Paranaense de Desenvolvedores",
+    "filename": "feed.xml",
+    "path": "/rss/feed.xml",
+    "id": "https://devpr.org/"
+  },
+  "jsonfeed": {
+    "path": "/rss/feed.json",
+    "url": "https://devpr.org/rss/feed.json"
+  },
+  "author": {
+    "name": "Comunidade DevParaná",
+    "email": "ola@devpr.org",
+    "url": "https://devpr.org"
+  }
+}

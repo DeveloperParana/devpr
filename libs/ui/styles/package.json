@@ -1,0 +1,10 @@
+{
+  "name": "ui-styles",
+  "scripts": {
+    "build": "npm-run-all css:compile css:prefix css:minify --silent",
+    "serve": "nodemon --watch src/ --ext scss --exec 'npm run build'",
+    "css:compile": "sass --style expanded --source-map --embed-sources --no-error-css src/:css/",
+    "css:prefix": "postcss --config css --replace css/*.css css/*/*.css !css/*.min.css",
+    "css:minify": "cleancss -O1 --with-rebase --source-map --source-map-inline-sources --batch --batch-suffix .min css/*.css css/*/*.css !css/*.min.css !css/*/*.min.css"
+  }
+}
