@@ -1,0 +1,26 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "DevPR",
+  "language": "pt-br",
+  "home_page_url": "https://devpr.org/",
+  "feed_url": "https://devpr.org/rss/feed.json",
+  "description": "Comunidade Paranaense de Desenvolvedores",
+  "author": {
+    "name": "Comunidade DevParaná",
+    "url": "https://devpr.org"
+  },
+  "items": [{
+      "id": "https://devpr.org/blog/second-post/",
+      "url": "https://devpr.org/blog/second-post/",
+      "title": "11ty is awesome",
+      "content_html": "<p>This post has a random photo in it.</p>\n<p><img src=\"https://source.unsplash.com/random/600x400\" alt=\"A random placeholder image\" /></p>\n",
+      "date_published": "2020-06-29T00:00:00Z"
+    },{
+      "id": "https://devpr.org/blog/first-post/",
+      "url": "https://devpr.org/blog/first-post/",
+      "title": "Having fun with TypeScript",
+      "content_html": "<p>This is a sample blog post.</p>\n",
+      "date_published": "2020-06-28T00:00:00Z"
+    }
+  ]
+}

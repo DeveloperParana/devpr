@@ -1,0 +1,122 @@
+
+  <!doctype html>
+  <html lang="pt-br" data-theme="dark">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/scss/styles.css">
+      <meta name="description" content="Comunidade Paranaense de Desenvolvedores">
+      <title>Having fun with TypeScript</title>
+    </head>
+    <body>
+      <div class="hero">
+        
+    <nav class="container-fluid" id="navigation">
+      <ul>
+        <li>
+          <a href="/" class="contrast grid">
+            <strong>DevPR</strong>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          
+    <details role="list" dir="rtl" id="switch-theme">
+      <summary aria-haspopup="listbox" role="link" class="contrast">Tema</summary>
+      <ul role="listbox">
+        <li>
+          <a href="#" data-value="auto">Automático</a>
+        </li>
+        <li>
+          <a href="#" data-value="light">Claro</a>
+        </li>
+        <li>
+          <a href="#" data-value="dark">Escuro</a>
+        </li>
+      </ul>
+    </details>
+    <script type="module" defer>
+      const html = document.querySelector('html')
+      const switchTheme = document.querySelector('#switch-theme')
+      if (html && switchTheme) {
+        const buttons = switchTheme.querySelectorAll('a')
+        buttons.forEach(button => {
+          button.onclick = (e) => {
+            e.preventDefault()
+            html.dataset.theme = button.dataset.value
+          }
+        })
+      }
+    </script>
+  
+        </li>
+        <li>
+          <details role="list" dir="rtl">
+            <summary aria-haspopup="listbox" role="link" class="contrast">Apps</summary>
+            <ul role="listbox">
+              <li><a href="//blog">Blog</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  
+        <header class="container">
+          <h2 class="text-shadow-drop-center">Comunidade Paranaense de Desenvolvedores</h2>
+          <h1 class="text-shadow-drop-center">Having fun with TypeScript</h1>
+        </header>
+      </div>
+      <main class="container">
+        
+      <div class="grid">
+
+        <article>
+          <em>
+            Guilherme Siquinelli,
+
+            <time class="text-muted" datetime="2020-06-28">
+              Sun Jun 28 2020
+            </time>
+
+          </em>
+
+          <br><hr><br>
+
+          <div>Quem num gosta di mim que vai caçá sua turmis!Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.</div>
+
+          <br><hr><br>
+
+          <div><p>This is a sample blog post.</p>
+</div>
+
+        </article>
+
+        <aside>
+          
+    <p>
+      <a href="/blog/first-post/">Having fun with TypeScript</a>
+      
+      <small>Quem num gosta di mim que vai caçá sua turmis!Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.</small>
+    </p>
+  
+    <p>
+      <a href="/blog/second-post/">11ty is awesome</a>
+      
+    <a href="/blog/second-post/" aria-label="unsplash">
+      <figure>
+        <img src="https://source.unsplash.com/random/600x400" alt="unsplash">
+      </figure>
+    </a>
+      
+      <small>Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.Copo furadis é disculpa de bebadis, arcu quam euismod magna.Viva Forevis aptent taciti sociosqu ad litora torquent.</small>
+    </p>
+  
+        </aside>
+      </div>
+      <a href="/blog">Voltar ao blog</a>
+    
+      </main>
+    </body>
+  </html>
+  

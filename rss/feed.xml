@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>DevPR</title>
+	<subtitle>Comunidade Paranaense de Desenvolvedores</subtitle>
+	
+	<link href="https://devpr.org/rss/feed.xml" rel="self"/>
+	<link href="https://devpr.org/"/>
+	<updated>2020-06-29T00:00:00Z</updated>
+	<id>https://devpr.org/</id>
+	<author>
+		<name>Comunidade DevParaná</name>
+		<email>ola@devpr.org</email>
+	</author>
+	
+	<entry>
+		<title>11ty is awesome</title>
+		<link href="https://devpr.org/blog/second-post/"/>
+		<updated>2020-06-29T00:00:00Z</updated>
+		<id>https://devpr.org/blog/second-post/</id>
+		<content type="html">&lt;p&gt;This post has a random photo in it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://source.unsplash.com/random/600x400&quot; alt=&quot;A random placeholder image&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Having fun with TypeScript</title>
+		<link href="https://devpr.org/blog/first-post/"/>
+		<updated>2020-06-28T00:00:00Z</updated>
+		<id>https://devpr.org/blog/first-post/</id>
+		<content type="html">&lt;p&gt;This is a sample blog post.&lt;/p&gt;
+</content>
+	</entry>
+</feed>

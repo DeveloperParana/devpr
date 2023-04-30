@@ -1,0 +1,77 @@
+
+  <!doctype html>
+  <html lang="pt-br" data-theme="dark">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/scss/styles.css">
+      <meta name="description" content="Comunidade Paranaense de Desenvolvedores">
+      <title>DevPR Blog's</title>
+    </head>
+    <body>
+      <div class="hero">
+        
+    <nav class="container-fluid" id="navigation">
+      <ul>
+        <li>
+          <a href="/" class="contrast grid">
+            <strong>DevPR</strong>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          
+    <details role="list" dir="rtl" id="switch-theme">
+      <summary aria-haspopup="listbox" role="link" class="contrast">Tema</summary>
+      <ul role="listbox">
+        <li>
+          <a href="#" data-value="auto">Automático</a>
+        </li>
+        <li>
+          <a href="#" data-value="light">Claro</a>
+        </li>
+        <li>
+          <a href="#" data-value="dark">Escuro</a>
+        </li>
+      </ul>
+    </details>
+    <script type="module" defer>
+      const html = document.querySelector('html')
+      const switchTheme = document.querySelector('#switch-theme')
+      if (html && switchTheme) {
+        const buttons = switchTheme.querySelectorAll('a')
+        buttons.forEach(button => {
+          button.onclick = (e) => {
+            e.preventDefault()
+            html.dataset.theme = button.dataset.value
+          }
+        })
+      }
+    </script>
+  
+        </li>
+        <li>
+          <details role="list" dir="rtl">
+            <summary aria-haspopup="listbox" role="link" class="contrast">Apps</summary>
+            <ul role="listbox">
+              <li><a href="//blog">Blog</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  
+        <header class="container">
+          <h2 class="text-shadow-drop-center">Comunidade Paranaense de Desenvolvedores</h2>
+          <h1 class="text-shadow-drop-center">DevPR Blog's</h1>
+        </header>
+      </div>
+      <main class="container">
+        <h1>Hello world</h1>
+<p>Check out the <a href="/blog">blog</a> too!</p>
+
+      </main>
+    </body>
+  </html>
+  
