@@ -1,0 +1,85 @@
+{
+  "name": "devpr-org",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "conf",
+  "sourceRoot": "devpr-org/devpr-org/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/devpr-org/devpr-org",
+        "index": "devpr-org/devpr-org/src/index.html",
+        "browser": "devpr-org/devpr-org/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "devpr-org/devpr-org/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "devpr-org/devpr-org/src/favicon.svg",
+          "devpr-org/devpr-org/src/assets"
+        ],
+        "styles": ["devpr-org/devpr-org/src/styles.scss"],
+        "scripts": [],
+        "server": "devpr-org/devpr-org/src/main.server.ts",
+        "prerender": true,
+        "ssr": {
+          "entry": "devpr-org/devpr-org/server.ts"
+        }
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "devpr-org:build:production"
+        },
+        "development": {
+          "buildTarget": "devpr-org:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "devpr-org:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "devpr-org/devpr-org/jest.config.ts"
+      }
+    }
+  }
+}
