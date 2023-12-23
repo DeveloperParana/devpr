@@ -1,0 +1,21 @@
+{
+  "name": "feature-adm",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "devpr-org/feature-adm/src",
+  "prefix": "adm",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "devpr-org/feature-adm/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}
