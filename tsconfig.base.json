@@ -17,6 +17,7 @@
     "paths": {
       "@devpr/feature-adm": ["devpr-org/feature-adm/src/index.ts"],
       "@devpr/feature-conf": ["devpr-org/feature-conf/src/index.ts"],
+      "@devpr/feature-home": ["devpr-org/feature-home/src/index.ts"],
       "@devpr/feature-jobs": ["devpr-org/feature-jobs/src/index.ts"]
     }
   },
