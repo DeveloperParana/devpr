@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@devpr/feature-conf": ["devpr-org/feature-conf/src/index.ts"],
       "@devpr/feature-jobs": ["devpr-org/feature-jobs/src/index.ts"]
     }
   },
